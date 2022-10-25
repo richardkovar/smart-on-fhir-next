@@ -129,9 +129,9 @@ function PatientDetails(props: { patient: PatientModel, conditions: ConditionsRe
                     <span className={"text-lg font-bold"}>Age </span>
                     <span>{yearsSince(new Date(props.patient.birthDate), props.patient.deceasedDateTime ? new Date(props.patient.deceasedDateTime) : undefined).toFixed(1)} years</span>
                 </div>
-                <div>
+                <div className={"pt-2"}>
                     <span className={"text-lg font-bold"}>Conditions </span>
-                    <table className={"table-auto border-combined border border-slate-500"}>
+                    <table className={"table-auto border-combined border border-slate-500 w-full"}>
                         <thead className={"text-left border border-b-1 border-slate-500"}>
                             <tr>
                                 <PatientConditionsColHeader onclick={handleHeaderClick} type={"condition"} _type={sortType} sort={sortDirection} title={"Condition"} alpha={true}/>

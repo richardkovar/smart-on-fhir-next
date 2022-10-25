@@ -15,7 +15,7 @@ const Patient: NextPage<{ patient: PatientModel,
     }
 
     return (
-        <div className={"container mx-auto"}>
+        <div className={"container mx-auto pt-4"}>
             <PatientDetails patient={props.patient} conditions={props.conditions}/>
         </div>
     )
