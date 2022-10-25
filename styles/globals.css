@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+td, th{
+    padding: 10px;
+}
+
+th{
+    user-select: none;
+    cursor: pointer;
+}
+
